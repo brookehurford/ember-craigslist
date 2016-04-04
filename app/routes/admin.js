@@ -6,5 +6,11 @@ export default Ember.Route.extend({
       listings: this.store.findAll('listing'),
       categories: this.store.findAll('category')
     });
+  },
+  actions: {
+    destroyListing(listing) {
+      listing.destroyRecord();
+      this.transitionTo('admin');
+    }
   }
 });

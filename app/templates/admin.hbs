@@ -1,5 +1,4 @@
 <h1>Admin</h1>
 {{#each model.listings as |listing|}}
-  {{admin-listing-tile listing=listing}}
-  <h1>{{model.listing.category}}</h1>
+  {{admin-listing-tile listing=listing destroyListing="destroyListing"}}
 {{/each}}
