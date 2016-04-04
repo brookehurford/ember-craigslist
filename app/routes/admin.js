@@ -11,6 +11,15 @@ export default Ember.Route.extend({
     destroyListing(listing) {
       listing.destroyRecord();
       this.transitionTo('admin');
+    },
+    updateListing(listing, params) {
+      Object.keys(params).forEach(function(key){
+        if(params[key]!== undefined) {
+          listing.set(key,params[key]);
+        }
+      });
+      listing.save();
+      this.transitionTo('listing');
     }
   }
 });
