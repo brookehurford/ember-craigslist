@@ -20,7 +20,3 @@ export default Ember.Route.extend({
     }
   }
 });
-
-// timePosted: Ember.computed('listing.date', 'listing.time', function(){
-//   return this.get('listing.date') + ', ' + this.get('listing.time');
-// })
