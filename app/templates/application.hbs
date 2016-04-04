@@ -1,4 +1,14 @@
-{{#link-to 'index'}}<h2>Craigslist</h2>{{/link-to}}
-{{#link-to 'admin'}}<p>Admins Only</p>{{/link-to}}
+<div class="headerBar">
+  <div class="container headerContainer">
+    <div class="logo">
+      {{#link-to 'index'}}<h2>Craigslist</h2>{{/link-to}}
+    </div>
+    <div class="navigation">
+      {{#link-to 'admin'}}<p>Admins Only</p>{{/link-to}}
+    </div>
+  </div>
+</div>
 
-{{outlet}}
+<div class="container">
+  {{outlet}}
+</div>
