@@ -11,6 +11,7 @@ export default Ember.Component.extend({
         details: this.get('details'),
         img: this.get('img')
       };
+      console.log(listing);
       this.toggleProperty('updateListingForm');
       this.sendAction('updateListing', listing, params);
     }

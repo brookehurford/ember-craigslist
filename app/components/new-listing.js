@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  // currentDate: moment().format('LLL'),
   actions: {
     toggleDetail() {
       this.toggleProperty('addNewListing');
@@ -11,8 +12,8 @@ export default Ember.Component.extend({
         details: this.get('details') ? this.get('details') : " ",
         img: this.get('img') ? this.get('img') : " ",
         category: this.get('category'),
+        date: moment().format("LLL")
       };
-      console.log(params);
       this.toggleProperty('addNewListing');
       this.set('title', " ");
       this.set('details', " ");

@@ -1,9 +1,3 @@
-<h1>{{model.name}}</h1>
-
-{{model.summary}}
-
-{{#each model.listings as |listing|}}
-  {{listing-tile listing=listing destroyListing="destroyListing"}}
-{{/each}}
+{{category-detail category=model}}
 
 {{new-listing saveListing="saveListing" category=model }}

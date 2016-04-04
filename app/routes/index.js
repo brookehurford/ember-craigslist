@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(params) {
+  model() {
     return this.store.findAll('category');
   },
   actions: {
@@ -12,3 +12,7 @@ export default Ember.Route.extend({
     }
   }
 });
+
+// Ember.Handlebars.registerBoundHelper('currentDate', function() {
+//   return moment().format('LL');
+// });

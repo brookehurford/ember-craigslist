@@ -1,0 +1,7 @@
+<h1>{{category.name}}</h1>
+<p>{{category.summary}}</p>
+<hr>
+<h2>Listings:</h2>
+{{#each sortedListings as |listing|}}
+  {{listing-tile listing=listing destroyListing="destroyListing"}}
+{{/each}}
