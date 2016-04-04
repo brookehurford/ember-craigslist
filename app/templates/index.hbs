@@ -1,0 +1,9 @@
+
+<h1> hey, Im the index.</h1>
+
+
+{{#each model as |category|}}
+  {{category.name}}
+{{/each}}
+
+{{new-category category=category saveCategory="saveCategory"}}

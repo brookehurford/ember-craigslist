@@ -1,0 +1,12 @@
+{{#if addNewCategory}}
+<form>
+  <label for="name">Category</label>
+  {{input value=name id="name"}}
+  <label for="summary">Category Summary</label>
+  {{textarea value=summary id="summary"}}
+  <button {{action 'saveCategory' category}}>Save</button>
+</form>
+<button {{action 'toggleDetail'}}>Cancel</button>
+{{else}}
+  <button {{action 'toggleDetail'}}>Add New Category</button>
+{{/if}}
