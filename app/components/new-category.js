@@ -10,7 +10,6 @@ export default Ember.Component.extend({
         name: this.get('name') ? this.get('name') : " ",
         summary: this.get('summary') ? this.get('summary') : " ",
       };
-      debugger;
       this.toggleProperty('addNewCategory');
       this.set('name', " ");
       this.set('summary', " ");
