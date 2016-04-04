@@ -2,6 +2,8 @@
 
 {{model.summary}}
 
-{{#each listings as |listing|}}
-  {{listing-tile listing}}
+{{#each model.listings as |listing|}}
+  {{listing-tile listing=listing}}
 {{/each}}
+
+{{new-listing saveListing="saveListing" category=model }}
